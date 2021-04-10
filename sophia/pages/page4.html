@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Les prix</title>
+		<link rel="stylesheet" href="../css/messtyles.css" />
+		<link media="print" href="../css/impression.css" />
+		<script src="../scripts/scripts.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body onload="loadPage()">
+		<div id="conteneur" class="content-main">
+			<header> 
+				<a href="http://www-ens.iro.umontreal.ca/~login/tp3/tp3.html">
+					<img src="../images/shutterstock.jpeg" alt="intro" title="intro">
+				</a>
+				<h1>Les prix</h1>
+			</header>
+
+			<!-- Nav -->
+			<nav>
+				<table>
+					<tr>
+						<td>
+							<a href="../tp3.html">Bienvenue à Cuba</a>
+						</td>
+						<td>
+							<a href="../pages/page2.html">Histoire du pays</a> 
+						</td>
+						<td>
+							<a href="../pages/page3.html">Les incontournables</a> 
+						</td>
+						<td>
+							<a class="notalink">Les prix</a>
+						</td>
+						<td>
+							<a href="../pages/page5.html">Bonus</a>
+						</td>
+					</tr>
+				</table>
+			</nav>
+
+			<!-- Main -->
+			<main>
+				<center>
+					<form id="formulaire" method="post" action="http://www-ens.iro.umontreal.ca/~benbetks/cgi-bin/benbetks.cgi">
+						<table id="formTable">
+							<caption>Veuillez remplir les questions suivantes :</caption>
+							<tr>
+								<td>Nom : </td>
+								<td>
+									<input id="nom_utilisateur" type="text" name="name" size="20">
+								</td>
+							</tr>
+							<tr>
+								<td>Mot de passe : </td>
+								<td>
+									<input type="password" name="password" size="25">
+								</td>
+							</tr>
+							<tr>
+								<td>Email : (Obligatoire)</td>
+								<td>
+									<input id="mail_utilisateur" onclick="requiredTooltip()" required="true" type="mail" name="email" size="25">
+								</td>
+							</tr>
+							<tr>
+								<td>Genre : </td>
+								<td>
+									<input type="radio" id="homme" name="gender" value="homme">
+									<label for="male">Homme</label><br>
+									<input type="radio" id="femme" name="gender" value="femme">
+									<label for="female">Femme</label><br>
+								</td>
+							</tr>
+							<tr>
+								<td>Tranche d'age : </td>
+								<td>
+									<input type="checkbox" id="less20years" name="vehicle1" value="less20years">
+									<label for="vehicle1"> - de 20 ans</label><br>
+									<input type="checkbox" id="btwn2040years" name="vehicle2" value="btwn2040years">
+									<label for="vehicle2"> Entre 20 et 40 ans</label><br>
+									<input type="checkbox" id="morethan40years" name="vehicle3" value="morethan40years">
+									<label for="vehicle3"> + de 40 ans</label><br> 
+								</td>
+							</tr>
+							<tr>
+								<td>Navigateur préféré : </td>
+								<td>
+									<select name="browsers" id="browsers">
+									<option value="ie">Internet Explorer</option>
+									<option value="firefox">Firefox</option>
+									<option value="chrome">Google Chrome</option>
+									<option value="opera">Opera</option>
+									</select> 
+								</td>
+							</tr>
+						</table>
+						<p><input type="submit" value="Valider" name="SubmitBtn"></p>
+					</form>
+				</center>
+			</main>
+
+			<!-- Footer -->
+			<footer>
+				<table>
+					<tr>
+						<td rowspan="3">
+							<img src="../images/vhtml5.png" alt="W3C HTML 5.0" title="W3C HTML 5.0">
+						</td>
+						<td>
+							<a href="http://www-ens.iro.umontreal.ca/~login/tp3/tp3.html">Site web ENS IRO UMONTREAL</a>
+						</td>
+						<td rowspan="3">
+							<img src="../images/vcss.gif" alt="W3C CSS" title="W3C CSS">
+						</td>
+					</tr>
+					<tr>	
+						<td>Sophia Sammy</td>
+					</tr>
+					<tr>
+						<td>Matricule & Login</td>
+					</tr>
+				</table>
+			</footer>
+
+		</div>
+	</body>
+</html>
